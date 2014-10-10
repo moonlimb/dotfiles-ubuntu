@@ -1,0 +1,12 @@
+[user]
+	email = moonlimb@gmail.com
+	name = Moon Limb
+[push]
+	default = simple
+
+[alias]
+  ci = commit
+  st = status
+  lc = log ORIG_HEAD.. --stat --nomerges
+  llog = log --date=local
+
