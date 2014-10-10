@@ -5,7 +5,6 @@ users = ml
 publish = False
 
 [extensions]
-<<<<<<< HEAD
 mq =
 color =
 graphlog =
@@ -14,6 +13,8 @@ rebase =
 purge =
 shelve =
 =======
+=======
+>>>>>>> 6b915a2b9f7d9e27c42dcc9b8a5931ca7d410769
 mq = 
 color = 
 graphlog =
@@ -21,7 +22,6 @@ pager =
 rebase = 
 purge = 
 shelve = 
->>>>>>> 6b915a2b9f7d9e27c42dcc9b8a5931ca7d410769
 #attic = ~/.hgext/hgattic/attic.py
 
 [alias]
@@ -37,11 +37,7 @@ username = Moon Limb <moon.limb@invitae.com>
 ssh = ssh -C
 
 # global hgignore for IDE-specific files
-<<<<<<< HEAD
 # ignore = ~/.hgignore
-=======
-ignore = ~/.hgignore
->>>>>>> 6b915a2b9f7d9e27c42dcc9b8a5931ca7d410769
 
 editor=vim
 

@@ -8,7 +8,6 @@ alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../../'
 
-
 #l: long format
 #t: modification time 
 #S: size
@@ -52,7 +51,6 @@ function hg-log() {
 
 alias hl=hg-log
 alias hlb='hg log -b .'
-
 
 ##################
 # Django Aliases #

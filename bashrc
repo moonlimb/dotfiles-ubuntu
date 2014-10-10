@@ -26,55 +26,18 @@ shopt -s histappend
 # lambda \u03bb
 
 export PS1=$'\[\e[00;34m\] \u6797 (\h \u2219 \W) \u279c \[\e[0m\] '
-#PS1=$'\u2234\u2192\u263f\u2605'
-
-#####################
-# SED #
-#export LANG=C
-# Terminal Colors #
-PS1='\e[0;34m\u@\h\e[1;37m\e[0m [\W]:: '
-#PS1='[\e[1;34m\u@\h|\e[0m\W\em] '
-#PS1='\e[34;0m\u@\h: \e[33m\W\e[0m\$ '
-# Bash Aliases # 
 
 
-if [ -f ~/dotfiles/.bash_aliases ]; then
-    . ~/dotfiles/.bash_aliases
-fi
-
-[[ -f ~/dotfiles/.bash_ssh ]] && source ~/dotfiles/.bash_ssh
+[[ -f ~/dotfiles/bash_ssh ]] && source ~/dotfiles/bash_ssh
 
 #####################
 # Python virtualenv #
 
-#export WORKON_HOME=$HOME/.virtualenvs
-#export PIP_VIRTUALENV_BASE=$WORKON_HOME
-#export VIRTUALENV_USE_DISTRIBUTE=true
-#export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
-#[[ -f /usr/local/bin/virtualenvwrapper.sh ]] && . /usr/local/bin/virtualenvwrapper.sh
-
-################
-# mongodb #
-#alias mongo=./usr/bin/mongo
-########
-# RUBY #
-########
-
-## octopress #
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-#
-#export PATH="$PATH:$HOME/.rbenv/bin"
-#eval "$(rbenv init -)"
-#
-#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-# Make fish default shell #
-#exec fish
-
-# Autojump #
-# . /usr/share/autojump/autojump.sh
+export WORKON_HOME=$HOME/.virtualenvs
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export VIRTUALENV_USE_DISTRIBUTE=true
+export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
+[[ -f /usr/local/bin/virtualenvwrapper.sh ]] && . /usr/local/bin/virtualenvwrapper.sh
 
 # Bash configs #
 . $HOME/dotfiles/bash_aliases
@@ -92,7 +55,8 @@ fi
 
 # node_modules (local) #
 export PATH=./node_modules/.bin:$PATH
+
+# Autojump #
 #. /usr/share/autojump/autojump.sh
 
-# Invitae files (ubuntu) #
-. $HOME/dotfiles/crop-fns.env
+
