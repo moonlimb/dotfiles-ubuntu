@@ -59,4 +59,15 @@ export PATH=./node_modules/.bin:$PATH
 # Autojump #
 #. /usr/share/autojump/autojump.sh
 
+# Terminal History #
+export HISTCONTROL=ignoredups:erasedups # avoid duplicates
+shopt -s histappend                     # append history entires
+export HISTSIZE=100000                  # big history
+export HISTFILESIZE=100000              # big history
 
+# save and reload history after each command
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+
+# mercurial & git bash completion #
+. ~/.hg/hg-completion.bash
+. ~/.git/git-completion.bash
