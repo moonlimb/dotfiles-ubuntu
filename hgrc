@@ -12,16 +12,7 @@ pager =
 rebase =
 purge =
 shelve =
-=======
-=======
->>>>>>> 6b915a2b9f7d9e27c42dcc9b8a5931ca7d410769
-mq = 
-color = 
-graphlog =
-pager = 
-rebase = 
-purge = 
-shelve = 
+# don't use attic. caused problems
 #attic = ~/.hgext/hgattic/attic.py
 
 [alias]
