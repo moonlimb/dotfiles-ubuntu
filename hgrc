@@ -12,6 +12,8 @@ pager =
 rebase =
 purge =
 shelve =
+record =
+histedit = ~/dotfiles/hgext/hg_histedit.py
 # don't use attic. caused problems
 #attic = ~/.hgext/hgattic/attic.py
 
