@@ -49,8 +49,12 @@ function hg-log() {
   hg log --limit=$1
 }
 
+function hg-log-current-branch-only() {
+  hg log --limit=$1 --b .
+}
+
 alias hl=hg-log
-alias hlb='hg log -b .'
+alias hlb=hg-log-current-branch-only
 
 ##################
 # Django Aliases #
