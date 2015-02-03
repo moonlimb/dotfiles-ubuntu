@@ -1,0 +1,46 @@
+[trusted]
+users = ml
+
+[phases]
+publish = False
+
+[extensions]
+mq =
+color =
+graphlog =
+pager =
+rebase =
+purge =
+shelve =
+record =
+#histedit = ~/dotfiles/hgext/hg_histedit.py
+# don't use attic. caused problems
+#attic = ~/.hgext/hgattic/attic.py
+
+[alias]
+qz = qrefresh -u "moon limb <moon.limb@invitae.com>" -e
+qr = qrefresh -x *.hgsub
+amend = commit --amend
+
+[ui]
+# Name data to appear in commits
+username = Moon Limb <moon.limb@invitae.com>
+
+# enable compression for Mercurial
+ssh = ssh -C
+
+# global hgignore for IDE-specific files
+# ignore = ~/.hgignore
+
+editor=vim
+
+merge=vimdiff
+
+[diff]
+git = 1
+unified = 8
+showfunc = 1
+
+[merge-tools]
+vimdiff.executable = vim
+vimdiff.args = -d $base $local $output $other +close +close
