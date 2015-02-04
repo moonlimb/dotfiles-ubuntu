@@ -9,14 +9,14 @@ alias ....='cd ../../../'
 alias .....='cd ../../../../'
 
 #l: long format
-#t: modification time 
+#t: modification time
 #S: size
 #h: file size in human readable format rather than bytes
 alias l='ls -lh'
 alias la='ls -a'
 alias ll='ls -alrth'
 
-######### 
+#########
 # GREP #
 alias gr='grep -rl --color=auto'
 alias gl='grep -l'
@@ -79,5 +79,3 @@ alias pbpaste='xclip -selection clipboard -o'
 
 alias c='xclip'
 alias v='xclip -o'
-
-

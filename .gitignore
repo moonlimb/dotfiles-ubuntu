@@ -1,1 +1,4 @@
 pydistutils.cfg
+geneticus-fns-ubuntu.env
+*.pyc
+pip.conf
