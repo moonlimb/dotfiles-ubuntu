@@ -76,3 +76,8 @@ alias sqlall='python manage.py sqlall'
 # copy & paste
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+
+alias c='xclip'
+alias v='xclip -o'
+
+
