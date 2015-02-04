@@ -1,4 +1,3 @@
 dotfiles
 =======
-
-some of my dotfiles
+dotfiles for ubuntu

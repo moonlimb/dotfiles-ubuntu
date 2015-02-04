@@ -7,6 +7,7 @@ alias ..='cd ..'
 alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../../'
+alias dot='cd ~/dotfiles'
 
 #l: long format
 #t: modification time
