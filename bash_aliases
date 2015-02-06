@@ -7,7 +7,7 @@ alias ..='cd ..'
 alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../../'
-alias dot='cd ~/dotfiles'
+alias ,='cd ~/dotfiles'
 
 #l: long format
 #t: modification time
@@ -38,7 +38,7 @@ alias hd='hg diff'
 alias hr='hg rm'
 alias hc='hg commit -m'
 alias hp='hg push'
-alias hpu='hg pull -rebase'
+alias hpu='hg pull --rebase'
 # not working - ML (6/26/2014)
 #alias hd='cdiff -s'
 alias hf='cdiff -ls'
