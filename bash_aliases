@@ -47,6 +47,7 @@ alias hl5='hg log --limit=5'
 alias hl15='hg log --limit=15'
 alias hi='hg incoming'
 alias ho='hg outgoing'
+alias hlb='hg log -b .'
 
 function hh() {
   hg heads ${BRANCH_LABEL}
